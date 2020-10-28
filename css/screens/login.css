@@ -63,8 +63,6 @@
 }
 
 .login-form a {
-  text-decoration: none;
-  color: inherit; /* 부모따라감 */
   font-size: 0.737em;
   font-weight: bold;
 }
