@@ -8,6 +8,7 @@
 /* components <- 모든 페이지에서 사용되는 것 */
 @import "components/status-bar.css";
 @import "components/nav-bar.css";
+@import "components/screen-header.css";
 
 /* screen <- 해당 페이지에서만 사용되는 것 */
 @import "screens/login.css";
