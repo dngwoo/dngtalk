@@ -14,4 +14,19 @@
 
 .nav__link {
   color: #2e363e;
+  position: relative;
+}
+
+.nav__notification {
+  position: absolute;
+  right: -0.214em;
+  top: -0.857em;
+  width: 1.071em;
+  height: 1.071em;
+  border-radius: 50%;
+  background-color: crimson;
+  text-align: center;
+  line-height: 1.071em;
+  font-weight: bold;
+  color: white;
 }
