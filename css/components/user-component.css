@@ -1,0 +1,39 @@
+.user-component__column {
+  display: flex;
+  align-items: center;
+}
+
+.user-component__avatar {
+  width: 5em;
+  height: 5em;
+  border-radius: 1.929em;
+  margin-right: 1.429em;
+}
+
+.user-component__avatar--sm {
+  width: 4.286em;
+  height: 4.286em;
+  border-radius: 1.071em;
+  margin-right: 1.071em;
+}
+
+.user-component__text {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.user-component__title {
+  font-weight: bold;
+  font-size: 1.571em;
+}
+
+.user-component__title--not-bold {
+  font-weight: 400;
+}
+
+.user-component__subtitle {
+  font-size: 1.214em;
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: 0.471em;
+}
