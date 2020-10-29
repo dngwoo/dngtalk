@@ -1,3 +1,8 @@
+.user-component {
+  display: flex;
+  justify-content: space-between;
+}
+
 .user-component__column {
   display: flex;
   align-items: center;
@@ -15,12 +20,6 @@
   height: 4.286em;
   border-radius: 1.071em;
   margin-right: 1.071em;
-}
-
-.user-component__text {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
 }
 
 .user-component__title {
