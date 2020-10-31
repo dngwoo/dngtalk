@@ -1,0 +1,112 @@
+#chat-screen {
+  background-color: #abc1d1;
+  height: 11000vh;
+}
+
+#chat-screen .alt-header,
+#chat-screen .status-bar {
+  /* 배경색을 줘야 글들이 겹쳐서 보이지 않고 덮어씌우는 효과를 준다. element-ui사이트에 들어가보면 색을 안줘서 글들이 겹침 */
+  background-color: #abc1d1;
+  top: 0;
+  position: fixed;
+  width: 100%;
+}
+
+#chat-screen .status-bar {
+  z-index: 2;
+}
+
+#chat-screen .alt-header {
+  top: 0.714em;
+  z-index: 1;
+}
+
+/* main */
+.main-chat {
+  margin-top: 8.571em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chat__timestamp {
+  color: white;
+  background-color: #92a4b2;
+  padding: 1.071em;
+  border-radius: 1.786em;
+  margin-bottom: 2.143em;
+}
+
+/* 상대방 메세지 */
+.message-row {
+  width: 100%;
+  display: flex;
+}
+
+.message-row img {
+  width: 3.571em;
+  height: 3.571em;
+  border-radius: 50%;
+  margin-right: 0.714em;
+}
+
+.message__author {
+  margin-bottom: 5px;
+  display: block;
+}
+
+.message__info {
+  /* flex-end로 수직방향에서 최하단으로 보냄 */
+  display: flex;
+  align-items: flex-end;
+}
+
+.message__bubble {
+  background-color: white;
+  padding: 0.929em;
+  font-size: 1.286em;
+  margin-right: 0.357em;
+  border-radius: 1.071em;
+  position: relative;
+}
+
+.message__bubble:after {
+  /* 삼각형 만들기 */
+  content: "";
+  position: absolute;
+  border: 10px solid;
+  border-right-color: white;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-left: none;
+  transform: rotate(270deg);
+  top: 8px;
+  left: -1px;
+}
+
+.message__time,
+.message__author {
+  opacity: 0.8;
+}
+
+/* 내 메세지 */
+.message-row--own {
+  justify-content: flex-end;
+}
+
+.message-row--own .message__bubble {
+  background-color: var(--yellow);
+  margin-right: 0px;
+  margin-left: 0.357em;
+}
+
+.message-row--own .message__bubble:after {
+  /* 삼각형 만들기 */
+  border-right-color: var(--yellow);
+  left: initial;
+  right: -1px;
+}
+
+.message-row--own .message__info {
+  flex-direction: row-reverse;
+}
