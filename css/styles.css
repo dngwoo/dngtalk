@@ -54,3 +54,7 @@ a {
 .main-screen {
   padding: 0 var(--horizontal-space);
 }
+
+input {
+  outline: none;
+}

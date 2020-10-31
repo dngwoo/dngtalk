@@ -1,6 +1,5 @@
 #chat-screen {
   background-color: #abc1d1;
-  height: 11000vh;
 }
 
 #chat-screen .alt-header,
@@ -27,6 +26,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation: fadeIn 0.8s linear;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
 }
 
 .chat__timestamp {
@@ -122,14 +133,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: all 0.3s ease-in-out;
 }
 
 .reply .reply__column:first-child {
   width: 10%;
+  transition: all 0.3s ease-in-out;
 }
+
 .reply .reply__column:last-child {
   width: 90%;
   position: relative;
+  transition: all 0.3s ease-in-out;
 }
 
 .reply i {
@@ -141,25 +156,32 @@
   width: 100%;
   border: var(--main-border);
   border-radius: 1.786em;
+  transition: all 0.3s ease-in-out;
+  height: 3.571em;
+  /* 찾느라 고생함. input에도 기본으로 font-szie: 1.3333em이 있음. */
+  font-size: 1rem;
 }
 
 .reply__column:last-child > i,
 .reply__column:last-child button {
   position: absolute;
-  right: 0.214em;
-  top: 0.214em;
+  /* 찾느라 고생함. button에도 기본으로 font-szie: 1.3333em이 있음. */
+  font-size: 1rem;
+  top: calc((3.571em - 2.857em) / 2);
+  right: calc((3.571em - 2.857em) / 2);
 }
 
 .reply__column:last-child > i {
-  right: 3.571em;
-  top: 1.071em;
+  font-size: 1.3333em; /* 원래 fa-lg가 1.3333em이 default 값임 */
+  top: calc((3.571em - 1.3333em) / 2);
+  right: 3em;
 }
 
 .reply__column button {
   background-color: var(--yellow);
   border: none;
-  width: 40px;
-  height: 40px;
+  width: 2.857em;
+  height: 2.857em;
   border-radius: 50%;
 }
 
@@ -170,4 +192,21 @@
 .reply__column button:focus,
 .reply__column button:active {
   outline: none;
+}
+
+.reply:focus-within .reply__column:last-child {
+  width: 100vw;
+}
+
+.reply:focus-within .reply__column:first-child {
+  width: 0;
+}
+
+.reply:focus-within input {
+  width: 100%;
+  transform: translateY(-5.714em);
+}
+
+.reply:focus-within {
+  transform: translateY(5.714em);
 }
