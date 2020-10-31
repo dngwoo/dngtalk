@@ -11,6 +11,7 @@
 @import "components/screen-header.css";
 @import "components/user-component.css";
 @import "components/badge.css";
+@import "components/icon-row.css";
 
 /* screen <- 해당 페이지에서만 사용되는 것 */
 @import "screens/login.css";
@@ -42,4 +43,8 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.main-screen {
+  padding: 0 var(--horizontal-space);
 }
