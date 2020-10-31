@@ -1,7 +1,8 @@
+/* icon */
 .find-icons {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  border-bottom: var(--main-border);
   margin-bottom: 2.143em;
   padding-bottom: 2.143em;
 }
@@ -17,13 +18,13 @@
   margin-bottom: 0.514em;
 }
 
+/* recommended */
 .recommended-friends {
   border-bottom: var(--main-border);
   margin-bottom: 2.143em;
 }
 
 .recommended-friends__title {
-  font-size: 14px;
   color: rgba(0, 0, 0, 0.5);
 }
 
@@ -32,6 +33,90 @@
   text-align: center;
   line-height: 25em;
   height: 25em;
-  font-size: 18px;
+  font-size: 1.286em;
   color: rgba(0, 0, 0, 0.5);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+/* open chat */
+.open-chat__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.786em;
+}
+
+.open-chat__header span {
+  opacity: 0.6;
+}
+
+.open-post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.open-post__title {
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.open-post__hashtags {
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+
+.open-post__members {
+  margin-top: 0.5em;
+  display: flex;
+  align-items: center;
+}
+
+.open-post__members img {
+  width: 1.071em;
+  height: 1.071em;
+  border-radius: 50%;
+  margin-right: 0.357em;
+}
+
+.open-post__member-count {
+  opacity: 0.5;
+}
+
+.open-post__members .divider {
+  width: 0.143em;
+  height: 1.071em;
+  margin: 0 0.357em;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.open-post__member-status {
+  color: #ffb0e0;
+}
+
+.open-post__photo {
+  position: relative;
+}
+
+.open-post__photo img {
+  width: 8.571em;
+  height: 8.571em;
+  border-radius: 0.714em;
+}
+.open-post__heart-count {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 0.357em;
+  border-radius: 1.429em;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0.714em;
+  right: 0.714em;
+  font-size: 0.857em;
+}
+
+.open-post__heart-count span {
+  margin-left: 0.214em;
 }
