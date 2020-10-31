@@ -26,3 +26,29 @@
   justify-content: space-between;
   color: rgba(0, 0, 0, 0.5);
 }
+
+/* splash */
+#splash-screen {
+  background-color: var(--yellow);
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 9.429em;
+  animation: hideSplashScreen 1s ease-in-out forwards;
+}
+
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    /* 요소를 그리지 않기 위한 속성 */
+    visibility: hidden;
+  }
+}
