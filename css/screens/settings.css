@@ -1,0 +1,57 @@
+/* header */
+.alt-header {
+  padding: var(--horizontal-space);
+  margin-bottom: 1.071em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.alt-header__title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* settings */
+.settings-list {
+  padding-bottom: 2.143em;
+  margin-bottom: 2.143em;
+  border-bottom: var(--main-border);
+}
+
+.settings__setting {
+  font-size: 1.286rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1.111em 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.settings__setting:last-child {
+  border: none;
+}
+
+.setting__column:first-child {
+  display: flex;
+  align-items: center;
+}
+
+.setting__icon-wrapper {
+  /* 글자들 라인을 맞추기 위해서 사용 */
+  width: 1.389em;
+  height: 1.389em;
+  margin-right: 1.111em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.settings__setting i {
+  font-size: 1.222em;
+  opacity: 0.8;
+}
+
+.setting__column:last-child span {
+  opacity: 0.6;
+}
