@@ -41,6 +41,7 @@
 .message-row {
   width: 100%;
   display: flex;
+  margin-bottom: 1.429em;
 }
 
 .message-row img {
@@ -51,7 +52,7 @@
 }
 
 .message__author {
-  margin-bottom: 5px;
+  margin-bottom: 0.357em;
   display: block;
 }
 
@@ -74,14 +75,14 @@
   /* 삼각형 만들기 */
   content: "";
   position: absolute;
-  border: 10px solid;
+  border: 0.714em solid;
   border-right-color: white;
   border-top-color: transparent;
   border-bottom-color: transparent;
   border-left: none;
   transform: rotate(270deg);
-  top: 8px;
-  left: -1px;
+  top: 0.571em;
+  left: -0.071em;
 }
 
 .message__time,
@@ -104,7 +105,7 @@
   /* 삼각형 만들기 */
   border-right-color: var(--yellow);
   left: initial;
-  right: -1px;
+  right: -0.071em;
 }
 
 .message-row--own .message__info {
